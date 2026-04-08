@@ -1,0 +1,17 @@
+{
+  "name": "poetic-spotlight",
+  "display_name": "诗意点睛",
+  "version": "1.0.0",
+  "description": "Uses poetry to crystallize project essence - write, read, or interpret poems to find the 'eye' of a project",
+  "author": {
+    "name": "OpenMind"
+  },
+  "license": "MIT",
+  "keywords": ["poetry", "essence", "crystallization", "tone", "spirit"],
+  "skills": "./skills/",
+  "category": "meaning-encoding",
+  "philosophy": "A poem is a container of meaning - 20 characters can hold what 2000 words cannot. Poetry compresses essence.",
+  "skills_included": [
+    "poetic-essence: WRITE (创作定调), READ (借古喻今), INTERPRET (品诗得道)"
+  ]
+}

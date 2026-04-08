@@ -1,0 +1,20 @@
+{
+  "name": "creative-spark",
+  "display_name": "奇思妙想",
+  "version": "1.0.0",
+  "description": "3 core innovation skills: cross-domain analogy, constraint inversion, and dream-based insight generation",
+  "author": {
+    "name": "OpenMind"
+  },
+  "license": "MIT",
+  "keywords": ["creativity", "innovation", "cross-domain", "reframing", "dream"],
+  "skills": "./skills/",
+  "agents": "./agents/",
+  "category": "innovation",
+  "philosophy": "AI is constrained but lacks creativity. We keep it minimal - only proven, practical skills that aren't redundant with AI's built-in capabilities.",
+  "skills_included": [
+    "cross-domain: Borrows solutions from nature/art/other fields",
+    "constraint-flip: Transforms limitations into features",
+    "deep-dream: Uses dream logic to reframe problems and reveal unexpected insights"
+  ]
+}

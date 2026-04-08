@@ -1,0 +1,23 @@
+{
+  "name": "openmind",
+  "display_name": "OpenMind - 思维开拓工具箱",
+  "description": "A marketplace of cognitive thinking plugins that break AI's creative boundaries through unconventional methods",
+  "author": {
+    "name": "OpenMind",
+    "url": "https://github.com/openmind"
+  },
+  "license": "MIT",
+  "keywords": ["creativity", "innovation", "thinking", "cognitive", "brainstorming"],
+  "plugins": [
+    {
+      "name": "creative-spark",
+      "source": "./plugins/creative-spark",
+      "description": "奇思妙想 - 3 core innovation skills: cross-domain analogy, constraint inversion, and dream-based insight"
+    },
+    {
+      "name": "poetic-spotlight",
+      "source": "./plugins/poetic-spotlight",
+      "description": "诗意点睛 - Uses poetry to crystallize project essence and set the tone"
+    }
+  ]
+}

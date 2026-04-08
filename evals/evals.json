@@ -1,0 +1,26 @@
+{
+  "skill_name": "poetic-essence",
+  "evals": [
+    {
+      "id": 1,
+      "name": "write-mode-startup-pivot",
+      "prompt": "我们的创业项目做了三个月，方向改了四次，现在又要重新开始。给我写首诗定个调。",
+      "expected_output": "A classical-style Chinese poem (五言/七言, 4-8 lines) that captures the essence of repeated pivots, with interpretation connecting to the project situation",
+      "files": []
+    },
+    {
+      "id": 2,
+      "name": "read-mode-growth-plateau",
+      "prompt": "我们的产品增长到了一个平台期，用户数卡在10万上不去。有什么古诗词能解读一下这个情况吗？",
+      "expected_output": "A classical Chinese poem that mirrors the plateau situation, with interpretation and actionable insights",
+      "files": []
+    },
+    {
+      "id": 3,
+      "name": "interpret-mode-team-motto",
+      "prompt": "团队给我的项目寄语是'长风破浪会有时，直挂云帆济沧海'，帮我品品这首诗对我们团队意味着什么",
+      "expected_output": "Deep interpretation of the poem's meaning, connected to team context, with practical action insights",
+      "files": []
+    }
+  ]
+}
