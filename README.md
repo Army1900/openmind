@@ -22,6 +22,12 @@ openmind/
 │   └── poetic-spotlight/         # 诗意点睛 - Essence crystallization
 │       └── skills/
 │           └── poetic-essence/   # 诗意本质
+│
+│   └── know-act-unity/           # 知行合一 - Goal achievement
+│       └── skills/
+│           ├── clarify-intent/   # 明心定向
+│           ├── act-on-ground/    # 事上练
+│           └── reflect-anchor/   # 知行复盘
 └── templates/
 ```
 
@@ -155,12 +161,89 @@ AI: 这是李白《行路难》——写于他很迷茫的时候。
 
 ---
 
+## Plugin 3: know-act-unity (知行合一)
+
+**3 goal-achievement skills grounded in Wang Yangming's philosophy**
+
+> "知而不行只是未知" — Knowing without acting is not truly knowing.
+
+| Skill | Chinese | Trigger | What It Does |
+|-------|---------|---------|--------------|
+| **clarify-intent** | 明心定向 | Vague goal stated | Distills to one actionable first step |
+| **act-on-ground** | 事上练 | Over-planning, no action | Minimum verifiable action, execute now |
+| **reflect-anchor** | 知行复盘 | Phase complete or failed | Confront false assumptions, recalibrate |
+
+### The Cycle
+
+```
+clarify-intent (定向) → act-on-ground (事上练) → reflect-anchor (复盘) → loop
+```
+
+### clarify-intent
+```
+User: Our auth system is a mess, we need to refactor it.
+
+[clarify-intent triggers]
+
+AI: "A mess" — what specifically? Code structure? Security? Speed?
+What hurts the most when you try to add auth features?
+
+User: Adding OAuth takes 3 days and touches 7 files.
+
+AI: The real intent isn't "refactor auth" — that's the method.
+You want: adding auth features in 1-2 files, done in 1 day.
+
+First action: "Find all files that reference auth, map the call graph."
+
+✅ Gate passed — one sentence, actionable, has a deliverable.
+```
+
+### act-on-ground
+```
+User: [direction clear, but hasn't started]
+
+[act-on-ground triggers]
+
+AI: Don't refactor yet. Minimum step: grep all auth references.
+
+Result: 17 files reference auth (not 7 as expected).
+11 are indirect dependencies, 8 pierce through encapsulation.
+
+What this reveals: This isn't a refactoring problem — it's an architecture
+problem. The scope is 2.4x larger than perceived.
+
+Next step: Test if the 8 encapsulation-piercing deps actually break on change.
+```
+
+### reflect-anchor
+```
+[After 3 action steps on auth refactoring]
+
+[reflect-anchor triggers]
+
+AI: Original goal: "Add auth features in 1-2 files, 1 day."
+Where are we now?
+
+What action proved wrong:
+- Assumed "refactoring" would solve it → Wrong. It's an architecture problem.
+- Assumed 7 files → Actually 17. Scope was underestimated.
+
+What I thought I knew but didn't:
+"I assumed this was a code quality issue. It's actually an abstraction
+boundary issue — auth internals are exposed, not encapsulated."
+
+Calibrated direction: Build an abstraction layer first, then refactor.
+```
+
+---
+
 ## Why These Plugins?
 
 | Plugin | Solves What |
 |--------|-------------|
 | **creative-spark** | Rational approaches exhausted, need breakthrough |
 | **poetic-spotlight** | Direction fuzzy, need to crystallize essence |
+| **know-act-unity** | Knowing what to do but not doing it, or doing without verifying |
 
 ## License
 
